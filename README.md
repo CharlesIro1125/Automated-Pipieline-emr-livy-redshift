@@ -20,6 +20,6 @@ Automated pipeline
 
 <img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagprocess_view.jpg" alt="schema" width="1200" height="300" />
 
-Data_quality_check subdag
+data_quality_check subdag
 
 <img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagprocess_view1.jpg" alt="schema" width="800" height="300" />
