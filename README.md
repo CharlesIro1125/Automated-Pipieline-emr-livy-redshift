@@ -18,4 +18,4 @@ The IAM roles and EMR cluster with two EC2 nodes are first created, After which 
 
 Automated pipeline
 
-<img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/architecture.png" alt="schema" width="800" height="400" />
+<img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagprocess_1.jpg" alt="schema" width="800" height="400" />
