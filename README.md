@@ -40,5 +40,12 @@ Environment Set-up
   ## Airflow backend database
     postgresql (metadata database)
     rabbitmq (Celery result backend)
-      to setup the required backend see [SETUP Backend](https://medium.com/@ryanroline/installing-apache-airflow-on-windows-10-5247aa1249ef)
+    
+  ## Airflow version
+    version 1.10.15
+    
+  ## Celery version
+    version 4.3.1
+      
 ```
+to setup the required backend see [SETUP Backend](https://medium.com/@ryanroline/installing-apache-airflow-on-windows-10-5247aa1249ef)
