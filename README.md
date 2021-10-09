@@ -23,29 +23,29 @@ Automated pipeline
 Environment Set-up
 
 ```
-  ## EMR - 1 master node
-  release_label='emr-5.9.0'
-  master_instance_type='m4.xlarge'
+  EMR - 1 master node
+    release_label='emr-5.9.0'
+    master_instance_type='m4.xlarge'
   
-  ## EC2 - 1 slave node
-  core_node_instance_type='m4.xlarge'
+  EC2 - 1 slave node
+    core_node_instance_type='m4.xlarge'
   
-  ## Redshift - 1 node
-  cluster_type='multi-node'
-  node_type='dc2.large'
+  Redshift - 1 node
+    cluster_type='multi-node'
+    node_type='dc2.large'
   
-  ## Python version
-   python 2.7
+  Python version
+    python 2.7
    
-  ## Airflow backend database
+  Airflow backend database
     postgresql (metadata database)
     rabbitmq (Celery result backend)
     
-  ## Airflow version
+  Airflow version
     version 1.10.15
     
-  ## Celery version
+  Celery version
     version 4.3.1
       
 ```
-to setup the required backend see [SETUP Backend](https://medium.com/@ryanroline/installing-apache-airflow-on-windows-10-5247aa1249ef)
+to setup the required backend see [Set-up backend](https://medium.com/@ryanroline/installing-apache-airflow-on-windows-10-5247aa1249ef)
