@@ -22,3 +22,23 @@ Automated pipeline
 
 Environment Set-up
 
+```
+  ## EMR - 1 master node
+  release_label='emr-5.9.0'
+  master_instance_type='m4.xlarge'
+  
+  ## EC2 - 1 slave node
+  core_node_instance_type='m4.xlarge'
+  
+  ## Redshift - 1 node
+  cluster_type='multi-node'
+  node_type='dc2.large'
+  
+  ## Python version
+   python 2.7
+   
+  ## Airflow backend database
+    postgresql (metadata database)
+    rabbitmq (Celery result backend)
+    to setup the required backend see 
+```
