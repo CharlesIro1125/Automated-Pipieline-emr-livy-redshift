@@ -106,7 +106,7 @@ Dag tree view
 <img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagcombine.jpg" alt="schema" width="600" height="400" />
 
 ## The Analytics Module (black colored task above).
-For data integrity check, an analytical query is run on the relations to verify its consistance with the expected data quality. This check is done within the pipeline with a custom operator called Data Quality Check .
+For data integrity check, an analytical query is run on the relations to verify its consistance with the expected data quality and its result is logged in a log folder. This check is done within the pipeline with a custom operator called Data Quality Check .
 
 Data_qualtiy_check graph view.
 
@@ -115,3 +115,9 @@ Data_qualtiy_check graph view.
 Data_qualtiy_check tree view.
 
 <img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagprocess_3.jpg" alt="schema" width="1000" height="400" />
+
+## Example queries done on the star Schema.
+
+Star Schema
+
+<img src="https://github.com/CharlesIro1125/DataWarehouse/blob/master/CapstoneProject/UdacityCapstone.jpg" alt="schema" width="1000" height="400" />
