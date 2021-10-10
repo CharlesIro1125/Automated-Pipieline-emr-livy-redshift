@@ -19,3 +19,33 @@ The IAM roles and EMR cluster with two EC2 nodes are first created, After which 
 Automated pipeline
 
 <img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagprocess_view.jpg" alt="schema" width="1200" height="300" />
+
+Environment Set-up
+
+```
+  EMR - 1 master node
+    release_label='emr-5.9.0'
+    master_instance_type='m4.xlarge'
+  
+  EC2 - 1 slave node
+    core_node_instance_type='m4.xlarge'
+  
+  Redshift - 1 node
+    cluster_type='multi-node'
+    node_type='dc2.large'
+  
+  Python version
+    python 2.7
+   
+  Airflow backend database
+    postgresql (metadata database)
+    rabbitmq (Celery result backend)
+    
+  Airflow version
+    version 1.10.15
+    
+  Celery version
+    version 4.3.1
+      
+```
+to setup the required backend see [Set-up backend](https://medium.com/@ryanroline/installing-apache-airflow-on-windows-10-5247aa1249ef)
