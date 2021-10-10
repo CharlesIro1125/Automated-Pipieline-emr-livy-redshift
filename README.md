@@ -69,7 +69,7 @@ To install modules on python 2.7.
   pip install boto3
 ```
 
-The project contains some major folders and Files.
+The project contains some major folders and Files inside the Dags and Plugins folder.
 
 - The helpers folder, containing the sql ingestion code, to insert data into the database
 - The operators folder, containing all the custom operators used in the project.
