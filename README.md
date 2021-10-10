@@ -101,4 +101,4 @@ Data_qualtiy_check graph view.
 
 Data_qualtiy_check tree view.
 
-<img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagprocess_4.jpg" alt="schema" width="1000" height="400" />
+<img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagprocess_3.jpg" alt="schema" width="1000" height="400" />
