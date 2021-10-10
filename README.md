@@ -80,7 +80,7 @@ The project contains some major folders and Files inside the Dags and Plugins fo
 - The subdag file, for sub-processes to the main Dag.
 
 ## Running the Dag.
-To start Airflow after installation and starting the backend database
+To start Airflow after installation and setting up the backend database
 
 ```
   Start airflow
