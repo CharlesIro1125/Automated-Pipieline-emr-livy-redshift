@@ -120,4 +120,4 @@ Data_qualtiy_check tree view.
 
 Star Schema
 
-<img src="https://github.com/CharlesIro1125/DataWarehouse/blob/master/CapstoneProject/UdacityCapstone.jpg" alt="schema" width="1000" height="400" />
+<img src="https://github.com/CharlesIro1125/DataWarehouse/blob/master/CapstoneProject/UdacityCapstone.jpg" alt="schema" width="560" height="300" />
