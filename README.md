@@ -167,4 +167,4 @@ The emr_lib file contains a create_default_security_group() function with a vpc 
 
 This project can be used as a model to design your own custom Automated pipelines utilizing EMR, SPARK, LIVY and REDSHIFT. 
 
-Thanks......
+
