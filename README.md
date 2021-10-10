@@ -165,6 +165,6 @@ Aws account sets up a default security group, you will need two additional secur
 The emr_lib file contains a create_default_security_group() function with a vpc (virtual private cloud) id, edit this id to match your vpc id for the region your account is created.
 
 
-This project can be used as a model to design your own custom Automated pipelines utilizing EMR, SPARK, LIVY and REDSHIFT. 
+This project can be used as a model to design your own custom Automated pipelines utilizing EMR, EC2, SPARK, LIVY and REDSHIFT in a cost efficient manner. 
 
 
