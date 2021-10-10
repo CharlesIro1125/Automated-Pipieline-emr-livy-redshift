@@ -84,4 +84,4 @@ Once the dag is ready and avaliable from the Airflow Web UI, it runs according t
 
 A completed Dag run, with start date set to 'two days ago'
 
-<img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagvariables.jpg" alt="schema" width="1200" height="300" />
+<img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagprocess_1.jpg" alt="schema" width="1200" height="300" />
