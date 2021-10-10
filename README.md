@@ -59,7 +59,7 @@ Airflow Variables
 
 <img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagvariables.jpg" alt="schema" width="1200" height="300" />
 
-The variables are used to create the rerquired resources. Since the Redshift cluster is created within the pipeline, a postgre psycopg2 database connector is used to establish connection to the Redshift database. 
+The variables are used to create the required resources. Since the Redshift cluster is created within the pipeline, a postgre psycopg2 database connector is used to establish connection to the Redshift database. 
 
 An AWS Infrastructure as code module 'boto3' is used to build the required resources. Both boto3 and psycopg2 are python modules that needs to be installed.
 To install modules on python 2.7.
@@ -78,3 +78,10 @@ The project contains some major folders and Files.
 - The sqlTemplate folder, containing the SQL create table statements.
 - The main_dag_run file, the entry point for executing the Dags and all processes.
 - The subdag file, for sub-processes to the main Dag.
+
+Running te Dag.
+Once the dag is ready and avaliable from the Airflow Web UI, it runs according to defined start date and does a back-filling if the start date is in the past.
+
+A completed Dag run, with start date set to 'two days ago'
+
+<img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagvariables.jpg" alt="schema" width="1200" height="300" />
