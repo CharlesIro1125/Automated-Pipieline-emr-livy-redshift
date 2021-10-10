@@ -1,11 +1,11 @@
-# Automated-Pipieline-emr-livy-redshift
-concurrent spark context with Emr-Livy and redshift star schema
+# Automated-Pipieline-emr-livy-redshift.
+concurrent spark context with Emr-Livy and redshift star schema.
 
-## Achitecture
+## Achitecture.
 
 <img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/architecture.png" alt="schema" width="800" height="400" />
 
-Pipeline Consist of various modules
+Pipeline Consist of various modules.
 - EMR Cluster with Spark and Livy
 - Data Warehouse 
 - Analytics Module
@@ -50,7 +50,7 @@ Environment Set-up
 ```
 to setup the required backend see [set-up backend](https://medium.com/@ryanroline/installing-apache-airflow-on-windows-10-5247aa1249ef)
 
-Setting Up Airflow
+Setting Up Airflow.
 
 This project uses some custom opereators as well as Airflow operators. Airflow variables are used to hold some static values required for authentication to an AWS account. 
 An Access key and Secret key, Cluster parameters, AWS region, e.t.c.
@@ -149,4 +149,4 @@ The Analytical Data model contains a fact table of the event, which is arrriving
 <img src="https://github.com/CharlesIro1125/DataWarehouse/blob/master/CapstoneProject/CapstoneExample2.jpg" alt="result2" width="600" height="350" />            
 
             
-**Note the flag symbols has special meaning which were not provided in the dataset**          
+**Note: the flag symbols has special meaning which were not provided in the dataset**          
