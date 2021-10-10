@@ -1,5 +1,5 @@
 # Automated-Pipieline-emr-livy-redshift
-concurrent spark context with redshift star schema
+concurrent spark context with Emr-Livy and redshift star schema
 
 ## Achitecture
 
