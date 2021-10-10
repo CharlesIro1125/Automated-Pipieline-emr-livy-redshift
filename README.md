@@ -79,14 +79,22 @@ The project contains some major folders and Files.
 - The main_dag_run file, the entry point for executing the Dags and all processes.
 - The subdag file, for sub-processes to the main Dag.
 
-Running te Dag.
+## Running the Dag.
 Once the dag is ready and avaliable from the Airflow Web UI, it runs according to defined start date and does a back-filling if the start date is in the past.
 
-A completed Dag run, with start date set to 'two days ago'
+A completed Dag run, with start date set to 'two days ago'.
+
 Dag graph view
 
 <img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagprocess_1.jpg" alt="schema" width="1200" height="400" />
 
 Dag tree view
+
+<img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagcombine.jpg" alt="schema" width="600" height="400" />
+
+## The Analytics Module.
+For data integrity check, an analytical query is run on the relations to verify its consistance with the expected data quality. This check is done with a custom operator called Data Quality Check.
+
+Data_qualtiy_check graph view
 
 <img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagcombine.jpg" alt="schema" width="600" height="400" />
