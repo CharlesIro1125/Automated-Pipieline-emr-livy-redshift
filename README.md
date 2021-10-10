@@ -150,3 +150,9 @@ The Analytical Data model contains a fact table of the event, which is arrriving
 
             
 **Note: the flag symbols has special meaning which were not provided in the dataset**          
+
+
+## cloning the repository.
+
+After installing Airflow and celery executor. run the *airflow db init* command to generate the airflow config file. In the airflow config file, edit the airflow backend and executor backend database as discusssed above. Also add a Dags and Plugins directory Path in the config file for the dag and plugins Folder.
+Clone the dags and plugins folder from this remote repository to your local repository. Set up the airflow variables with AWS Access Key, AWS Secret key and cluster variables.
