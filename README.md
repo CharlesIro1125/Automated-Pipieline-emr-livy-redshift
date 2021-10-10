@@ -48,4 +48,13 @@ Environment Set-up
     version 4.3.1
       
 ```
-to setup the required backend see [Set-up backend](https://medium.com/@ryanroline/installing-apache-airflow-on-windows-10-5247aa1249ef)
+to setup the required backend see [set-up backend](https://medium.com/@ryanroline/installing-apache-airflow-on-windows-10-5247aa1249ef)
+
+Setting Up Airflow
+
+This project uses some custom opereators as well as Airflow operators. Airflow variables are used to hold some static values required for authentication to an AWS account. 
+An Access key and Secret key, Cluster parameters, AWS region, e.t.c.
+
+
+
+
