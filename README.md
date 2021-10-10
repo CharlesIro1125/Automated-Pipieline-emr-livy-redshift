@@ -61,10 +61,11 @@ Airflow Variables
 
 The variables are used to create the rerquired resources. Since the Redshift cluster is created within the pipeline, a postgre psycopg2 database connector is used to establish connection to the Redshift database. 
 
-An AWS Infrastructure as code module 'boto3' used to build the required resources. boto3 and psycopg2 are python modules that needs to be installed.
-To install modules
+An AWS Infrastructure as code module 'boto3' use to build required resources. Both boto3 and psycopg2 are python modules that needs to be installed.
+To install modules.
 
 ```
   pip install psycopg2
   pip install boto3
 ```
+
