@@ -61,11 +61,20 @@ Airflow Variables
 
 The variables are used to create the rerquired resources. Since the Redshift cluster is created within the pipeline, a postgre psycopg2 database connector is used to establish connection to the Redshift database. 
 
-An AWS Infrastructure as code module 'boto3' use to build required resources. Both boto3 and psycopg2 are python modules that needs to be installed.
-To install modules.
+An AWS Infrastructure as code module 'boto3' is used to build the required resources. Both boto3 and psycopg2 are python modules that needs to be installed.
+To install modules on python 2.7.
 
 ```
   pip install psycopg2
   pip install boto3
 ```
 
+The project contains some major folders and Files.
+
+- The helpers folder, containing the sql ingestion code, to insert data into the database
+- The operators folder, containing all the custom operators used in the project.
+- The Airflow lib folder, containing the Emr and Redshift file for creating the clusters and an IAM file for creating the required roles to be assumed by the created                resources.
+- The Sparkjob folder, containing the spark scritps to be posted to the EMR cluster using the Livy API post request.
+- The sqlTemplate folder, containing the SQL create table statements.
+- The main_dag_run file, the entry point for executing the Dags and all processes.
+- The subdag file, for sub-processes to the main Dag.
