@@ -71,9 +71,9 @@ To install modules on python 2.7.
 
 The project contains some major folders and Files inside the Dags and Plugins folder.
 
-- The helpers folder, containing the sql ingestion code, to insert data into the database
+- The helpers folder, containing the sql ingestion code, to insert data into the database.
 - The operators folder, containing all the custom operators used in the project.
-- The Airflow lib folder, containing the Emr and Redshift file for creating the clusters and an IAM file for creating the required roles to be assumed by the created                resources.
+- The Airflow lib folder, containing the emr_lib file for creating the clusters and an IAM_lib file for creating the required roles to be assumed by the created                resources.
 - The Sparkjob folder, containing the spark scritps to be posted to the EMR cluster using the Livy API post request.
 - The sqlTemplate folder, containing the SQL create table statements.
 - The main_dag_run file, the entry point for executing the Dags and all processes.
