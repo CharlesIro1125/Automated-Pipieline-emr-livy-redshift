@@ -55,6 +55,8 @@ Setting Up Airflow
 This project uses some custom opereators as well as Airflow operators. Airflow variables are used to hold some static values required for authentication to an AWS account. 
 An Access key and Secret key, Cluster parameters, AWS region, e.t.c.
 
+Static Variables
 
+<img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagvariables.jpg" alt="schema" width="1200" height="300" />
 
 
