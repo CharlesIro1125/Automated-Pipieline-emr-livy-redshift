@@ -57,5 +57,5 @@ An Access key and Secret key, Cluster parameters, AWS region, e.t.c.
 
 Static Variables
 
-<img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagvariables.jpg" alt="schema" width="1200" height="300" />
+
 
