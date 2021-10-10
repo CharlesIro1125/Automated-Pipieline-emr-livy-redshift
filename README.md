@@ -149,4 +149,4 @@ The Analytical Data model contains a fact table of the event, which is arrriving
 <img src="https://github.com/CharlesIro1125/DataWarehouse/blob/master/CapstoneProject/CapstoneExample2.jpg" alt="result2" width="600" height="350" />            
 
             
-**Note the flags symbols has special meaning which were not provided in the dataset**          
+**Note the flag symbols has special meaning which were not provided in the dataset**          
