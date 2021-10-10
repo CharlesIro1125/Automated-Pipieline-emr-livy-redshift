@@ -158,7 +158,12 @@ After installing Airflow and celery executor. run the *airflow db init* command 
 
 Clone the dags and plugins folder from this remote repository into your local Dags and Plugins folder. Set up the airflow variables with AWS Access Key, AWS Secret key and cluster variables.
 
-Create an S3 bucket and upload the four datasets in this repository. look at the files inside the sparkjob folder, to edit the bucket source name and bucket sink name to match your defined names.
+Create an S3 bucket and upload the four datasets in this repository.
+- [Airportgeocode](https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/Airportgeocode.csv)
+- [Airportgeocode](https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/Airportgeocode.csv)
+-  
+-  
+ look at the files inside the sparkjob folder, to edit the bucket source name and bucket sink name to match your defined names.
 
 Aws account sets up a default security group, you will need two additional security groups for the master node and slave node. Set up this additional security group in your aws Ec2 - Network & Security - Security groups page. Allow inbound traffic to the master node than only port 22 by listing the required inbound ports in your aws EMR - block public access page (port 80, port 5439 for redshift, and port 8998 for emr-livy are listed for this project). 
 
