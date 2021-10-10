@@ -136,7 +136,7 @@ The Analytical Data model contains a fact table of the event, which is arrriving
             JOIN dimArriveDate A ON A.arrivedate_id = F.arrivedate_id) \
             WHERE CAST(F.arrivedate_id AS date) < F.departdate AND A.year =2016 AND A.month = 4 LIMIT 10;
 ```
-<img src="https://github.com/CharlesIro1125/DataWarehouse/blob/master/CapstoneProject/CapstoneExample1.jpg" alt="result1" width="700" height="500" />
+<img src="https://github.com/CharlesIro1125/DataWarehouse/blob/master/CapstoneProject/CapstoneExample1.jpg" alt="result1" width="600" height="400" />
 
 > Tourist who arrived the USA in the month 0f Apri 2016 and has updated flag?
 
@@ -146,7 +146,7 @@ The Analytical Data model contains a fact table of the event, which is arrriving
             JOIN dimArriveDate A ON A.arrivedate_id = F.arrivedate_id) \
             WHERE CAST(F.arrivedate_id AS date) < F.departdate AND F.updateFlag != 'Nil' AND A.year =2016 AND A.month = 4 LIMIT 10;
 ```            
-<img src="https://github.com/CharlesIro1125/DataWarehouse/blob/master/CapstoneProject/CapstoneExample2.jpg" alt="result2" width="700" height="500" />            
+<img src="https://github.com/CharlesIro1125/DataWarehouse/blob/master/CapstoneProject/CapstoneExample2.jpg" alt="result2" width="600" height="400" />            
 
             
 **Note the flags symbols has special meaning which were not provided in the dataset**          
