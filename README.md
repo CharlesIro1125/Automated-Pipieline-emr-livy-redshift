@@ -126,7 +126,7 @@ The Analytical Data model contains a fact table of the event, which is arrriving
 
 
 
-###  Example queries.The queries are executed on the example.ipynb file. 
+###  Example queries. 
 
 > Tourist who arrived the USA in the month 0f Apri 2016 and their flags?
 
