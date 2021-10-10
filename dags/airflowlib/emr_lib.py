@@ -50,9 +50,14 @@ def create_default_security_group():
                        aws_secret_access_key = SECRET
                        )
 
+    # vpc id ='vpc-9c5635f7' for the aws region_name
     vpc = ec2.Vpc(id='vpc-9c5635f7')
+
+    # slave security group index 0, for EMR slave node
     defaultSg1 = list(vpc.security_groups.all())[0]
+    # master security group index 1, for EMR master node
     defaultSg = list(vpc.security_groups.all())[1]
+    # default security group index 2, for Redshift cluster
     defaultSg2 = list(vpc.security_groups.all())[2]
 
     try:
