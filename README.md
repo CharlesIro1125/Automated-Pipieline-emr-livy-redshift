@@ -80,6 +80,19 @@ The project contains some major folders and Files.
 - The subdag file, for sub-processes to the main Dag.
 
 ## Running the Dag.
+To start Airflow after installation and starting the backend database
+
+```
+  Start airflow
+    airflow db init
+  Start the Web server on desired port (8081 used)
+    airflow webserver -p 8081
+  Start airflow scheduler
+    airflow scheduler
+  Start airflow executor
+    airflow celery worker    
+```    
+  
 Once the dag is ready and avaliable from the Airflow Web UI, it runs according to defined start date and does a back-filling if the start date is in the past.
 
 A completed Dag run, with start date set to 'two days ago'.
