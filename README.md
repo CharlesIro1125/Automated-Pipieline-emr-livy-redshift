@@ -95,6 +95,10 @@ Dag tree view
 ## The Analytics Module.
 For data integrity check, an analytical query is run on the relations to verify its consistance with the expected data quality. This check is done with a custom operator called Data Quality Check.
 
-Data_qualtiy_check graph view
+Data_qualtiy_check graph view.
 
-<img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagcombine.jpg" alt="schema" width="600" height="400" />
+<img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagprocess_4.jpg" alt="schema" width="1000" height="400" />
+
+Data_qualtiy_check tree view.
+
+<img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagprocess_4.jpg" alt="schema" width="1000" height="400" />
