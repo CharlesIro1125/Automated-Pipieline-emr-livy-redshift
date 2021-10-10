@@ -85,8 +85,8 @@ Once the dag is ready and avaliable from the Airflow Web UI, it runs according t
 A completed Dag run, with start date set to 'two days ago'
 Dag graph view
 
-<img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagprocess_1.jpg" alt="schema" width="1200" height="300" />
+<img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagprocess_1.jpg" alt="schema" width="1200" height="400" />
 
 Dag tree view
 
-<img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagcombine.jpg" alt="schema" width="500" height="900" />
+<img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagcombine.jpg" alt="schema" width="600" height="400" />
