@@ -121,3 +121,32 @@ Data_qualtiy_check tree view.
 Star Schema
 
 <img src="https://github.com/CharlesIro1125/DataWarehouse/blob/master/CapstoneProject/UdacityCapstone.jpg" alt="schema" width="800" height="600" />
+
+The Analytical Data model contains a fact table of the event, which is arrriving the USA. And also some dimension tables to provide context on the event. The dimension table ought to provide broader context of the events in the fact table. The Tourist dimension table provides information used to identify the tourist, The State destination dimension table provides information on the state to which the tourist will be living in the USA, this could be drilled down to the city if it was provided in the immigration data, but for security purpose it wasn't. The Airport dimension table provides information on the airport on arrival, which could be useful for further security checks on the tourist. The arrive date dimension table provides information on the time of arrival and also includes the average temperature on the day of arrival. The fact table provides information which includes arrival flag, departure flag, update flag if the tourist has extended his stay beyond the departure date, and match flag to match his arrival date and departure date. Since this analytical schema is designed for surveillance, the flags are the key metrics. Other purposes can also be achieved with this schema.
+
+
+
+###  Example queries.The queries are executed on the example.ipynb file. 
+
+> Tourist who arrived the USA in the month 0f Apri 2016 and their flags?
+
+```
+  %sql SELECT D.Tourist_id,F.arrivedate_id,F.departdate,F.arrivalFlag,F.departureFlag,F.updateFlag,F.matchFlag FROM ((factArrivetheUsa F JOIN dimTourist D \
+            ON F.Tourist_id = D.Tourist_id) \
+            JOIN dimArriveDate A ON A.arrivedate_id = F.arrivedate_id) \
+            WHERE CAST(F.arrivedate_id AS date) < F.departdate AND A.year =2016 AND A.month = 4 LIMIT 10;
+```
+<img src="https://github.com/CharlesIro1125/DataWarehouse/blob/master/CapstoneProject/CapstoneExample1.jpg" alt="result1" width="700" height="500" />
+
+> Tourist who arrived the USA in the month 0f Apri 2016 and has updated flag?
+
+```
+  %sql SELECT D.Tourist_id,F.arrivedate_id,F.departdate,F.arrivalFlag,F.departureFlag,F.updateFlag,F.matchFlag FROM ((factArrivetheUsa F JOIN dimTourist D \
+            ON F.Tourist_id = D.Tourist_id) \
+            JOIN dimArriveDate A ON A.arrivedate_id = F.arrivedate_id) \
+            WHERE CAST(F.arrivedate_id AS date) < F.departdate AND F.updateFlag != 'Nil' AND A.year =2016 AND A.month = 4 LIMIT 10;
+```            
+<img src="https://github.com/CharlesIro1125/DataWarehouse/blob/master/CapstoneProject/CapstoneExample2.jpg" alt="result2" width="700" height="500" />            
+
+            
+**Note the flags symbols has special meaning which were not provided in the dataset**          
