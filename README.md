@@ -174,7 +174,7 @@ The emr_lib file contains a create_default_security_group() function with a vpc 
 This project can be used as a model to design your own custom Automated pipelines utilizing EMR, EC2, SPARK, LIVY and REDSHIFT in a cost efficient manner.
 
 
-Referances:
+References:
 
 https://github.com/aws-samples/aws-concurrent-data-orchestration-pipeline-emr-livy
 
