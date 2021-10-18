@@ -12,7 +12,7 @@ Pipeline Consist of various modules.
 
 Overview
 
-The IAM roles and EMR cluster with two EC2 nodes are first created, After which Data is read from an S3 bucket processing source to an EMR cluster for processing. To enable parallel processing of spark jobs, AWS Livy is used to create various spark context for spark job processing. After the data processing is done, the resulted parquest file is loaded to an S3 bucket called the processing sink. Afterwhich a Redshift cluster is created for the data warehouse. Data is then moved from an S3 processing sink to a staging area in Redshift having the required created tables. The data is then transformed from the staged area to a Star schema required for analytical processing. To verify the data integrity after completing this ETL pipeline, some analytic queries are run on the relational data.  
+The IAM roles and EMR cluster with two EC2 nodes are first created, After which Data is read from an S3 bucket to an EMR cluster for processing. To enable parallel processing of spark jobs, AWS Livy is used to create various spark context for spark job processing. After the data processing is done, the resulted parquest file is loaded to an S3 bucket called the processing sink. Afterwhich a Redshift cluster is created for the Data warehouse. Data is then moved from an S3 processing sink to a staging area in Redshift having the required created tables. The data is then transformed from the staged area to a Star schema required for analytical processing. To verify the data integrity after completing this ETL pipeline, some analytical queries are run on the relational data.  
 
 **Note: the created EMR cluster, Redshift cluster and AWS roles are deleted after the execution of the last DAG**
 
@@ -106,7 +106,7 @@ Dag tree view
 <img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/dagcombine.jpg" alt="schema" width="600" height="400" />
 
 ## The Analytics Module (black colored task above).
-For data integrity check, an analytical query is run on the relations to verify its consistance with the expected data quality and its result is logged in a log folder. This check is done within the pipeline with a custom operator called Data Quality Check .
+For data integrity check, an analytical query is run on the relations to verify its consistency with the expected data quality and it's result is logged in a log folder. This check is done within the pipeline with a custom operator called Data Quality Check .
 
 Data_qualtiy_check graph view.
 
@@ -171,6 +171,11 @@ Aws account sets up a default security group, you will need two additional secur
 The emr_lib file contains a create_default_security_group() function with a vpc (virtual private cloud) id, edit this id to match your vpc id for the region your account is created.
 
 
-This project can be used as a model to design your own custom Automated pipelines utilizing EMR, EC2, SPARK, LIVY and REDSHIFT in a cost efficient manner. 
+This project can be used as a model to design your own custom Automated pipelines utilizing EMR, EC2, SPARK, LIVY and REDSHIFT in a cost efficient manner.
+
+
+Referances:
+
+https://github.com/aws-samples/aws-concurrent-data-orchestration-pipeline-emr-livy
 
 
