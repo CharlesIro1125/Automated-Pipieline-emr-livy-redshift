@@ -83,13 +83,13 @@ The project contains some major folders and Files inside the Dags and Plugins fo
 To start Airflow after installation and setting up the backend database
 
 ```
- - Start airflow
+ -Start airflow
     airflow db init
- - Start the Web server on desired port (8081 used)
+ -Start the Web server on desired port (8081 used)
     airflow webserver -p 8081
- - Start airflow scheduler
+ -Start airflow scheduler
     airflow scheduler
- - Start airflow executor
+ -Start airflow executor
     airflow celery worker    
 ```    
   
