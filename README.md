@@ -7,7 +7,7 @@ concurrent spark context with Emr-Livy and redshift star schema.
 
 Pipeline Consist of various modules.
 - EMR Cluster with Spark and Livy
-- Data Warehouse 
+- Data Warehouse ( Spark, Airflow, Redshift Database)
 - Analytics Module
 
 Overview
